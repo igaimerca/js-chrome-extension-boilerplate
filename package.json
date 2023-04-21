@@ -1,0 +1,32 @@
+{
+  "name": "js-chrome-extension-boilerplate",
+  "version": "0.0.0",
+  "author": "",
+  "description": "",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "chrome-extension",
+    "vanilla js",
+    "vite",
+    "create-chrome-ext"
+  ],
+  "engines": {
+    "node": ">=14.18.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "watch": "nodemon --exec \"yarn build \" --ignore build/",
+    "preview": "vite preview",
+    "fmt": "prettier --write '**/*.{js,json,css,scss,md}'"
+  },
+  "dependencies": {
+    "openai": "^3.2.1"
+  },
+  "devDependencies": {
+    "@crxjs/vite-plugin": "^1.0.12",
+    "prettier": "^2.7.1",
+    "vite": "^2.9.13"
+  }
+}
